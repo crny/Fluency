@@ -1,21 +1,19 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
+    "name": "clear",
+    "description": "a framework based on Slim.",
+    "keywords": ["framework","rest","php"],
+    "homepage": "http://github.com/joychao/clear",
     "license": "MIT",
     "authors": [
         {
-            "name": "Josh Lockhart",
-            "email": "info@joshlockhart.com",
-            "homepage": "http://www.joshlockhart.com/"
+            "name": "Joy chao",
+            "email": "anzhengchao@gmail.com",
+            "homepage": "http://github.com/joychao"
         }
     ],
     "require": {
         "php": ">=5.3.0",
-        "monolog/monolog": "1.*",
         "slim/slim": "2.*",
         "slim/views": "0.*",
-        "twig/twig": "1.*"
     }
 }
