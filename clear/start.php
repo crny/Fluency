@@ -22,12 +22,29 @@ $app->app = $app;
 
 include app_path('routes.php');
 
-$app->hook('slim.after', function(){
+$app->hook('slim.after', function() use ($app) {
     $timeUsage = round(microtime(true) - CLEAR_TIME_START, 5);
     $memUsage = biteConvert(memory_get_usage(true) - CLEAR_MEMUSAGE);
+
+    function consoleArray($config){
+        $table = [];
+        foreach ($config as $key => $value) {
+            is_scalar($value) || $value = json_encode($value);
+            $table[$key] = ['value' => $value];
+        }
+        $data = json_encode($table);
+        echo "console.info('应用配置：');";
+        echo "console.table($data);";
+    }
+
     echo "<script>
     console.group('debug:');
     console.log('耗时: {$timeUsage}s');
     console.log('内存: {$memUsage}');
-    </script>";
+    console.groupEnd();
+    ";
+
+    consoleArray($app->container['settings']);
+
+    echo "</script>";
 });
