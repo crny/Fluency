@@ -1,0 +1,6 @@
+[submodule "clear/Slim"]
+	path = clear/Slim
+	url = https://github.com/codeguy/Slim
+[submodule "clear/Doctrine"]
+	path = clear/Doctrine
+	url = https://github.com/doctrine/doctrine2
