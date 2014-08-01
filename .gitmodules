@@ -1,12 +1,6 @@
-[submodule "clear/Slim"]
-	path = clear/Slim
-	url = https://github.com/codeguy/Slim
-[submodule "clear/Doctrine"]
-	path = clear/Doctrine
-	url = https://github.com/doctrine/doctrine2
-[submodule "Slim"]
-	path = Slim
-	url = https://github.com/codeguy/Slim
-[submodule "Database/Fluent"]
-	path = Database/Fluent
-	url = https://github.com/joychao/Fluent
+[submodule "Fluency/Slim"]
+	path = Fluency/Slim
+	url = http://github.com/codeguy/Slim
+[submodule "Fluency/Database/Fluent"]
+	path = Fluency/Database/Fluent
+	url = http://github.com/joychao/Fluent
