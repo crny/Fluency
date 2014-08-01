@@ -7,3 +7,6 @@
 [submodule "Slim"]
 	path = Slim
 	url = https://github.com/codeguy/Slim
+[submodule "Database/Fluent"]
+	path = Database/Fluent
+	url = https://github.com/joychao/Fluent
