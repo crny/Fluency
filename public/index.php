@@ -2,7 +2,7 @@
 
 define('APP_PATH', dirname(__DIR__) . '/app');
 
-require '../clear/start.php';
+require '../Fluency/start.php';
 
 // Run app
 $app->run();
